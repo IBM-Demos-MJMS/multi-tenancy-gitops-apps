@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: multi-tenancy-gitops
+    group: pipeline
+    type: git
+  name: gitops-repo
+data:
+  branch: master
+  host: github.com
+  org: IBM-Demos-MJMS
+  owner: IBM-Demos-MJMS
+  parentdir: .
+  protocol: https
+  repo: multi-tenancy-gitops-apps
+  url: https://github.com/IBM-Demos-MJMS/multi-tenancy-gitops-apps.git
